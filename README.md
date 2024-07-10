@@ -7,7 +7,7 @@
 Minimal API's take in two arguments: a API route, and a handler function. The handler The handler function takes the JSON data as a paramter, but it could also be something from an api endpoint such as the ID. Additionally, the function handler can take in the Todo service as the last parameter
 
 **Middleware:** 
-Middleware: Implemented my own middleware to log request information. Middleware executes before and after requests are completed. Middleware functions take in a context and next. The context contains the request information and we use next to continue to the next middleware like this: `await next(context)`.
+Implemented my own middleware to log request information. Middleware executes before and after requests are completed. Middleware functions take in a context and next. The context contains the request information and we use next to continue to the next middleware like this: `await next(context)`.
 
 **Endpoint Filters:**
 Execute before a endpoint. Used for things like input validation. Also takes in context and next and which is used to call the next endpoint filter.
