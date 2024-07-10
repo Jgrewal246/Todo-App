@@ -1,0 +1,25 @@
+GET http://localhost:5039/todos
+
+
+###
+
+GET http://localhost:5039/todos/1
+
+###
+GET http://localhost:5039/tasks/1
+###
+
+POST http://localhost:5039/todos
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "jas",
+    "dueDate": "2025-04-19",
+    "isCompleted": false
+}
+
+###
+
+DELETE http://localhost:5039/todos/1
+
